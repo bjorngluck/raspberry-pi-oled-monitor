@@ -51,7 +51,7 @@ Ensure the following Python libraries are installed:
 
 3. Clone the Repository:
    ```bash
-   git clone https://github.com/yourusername/raspberry-pi-oled-monitor.git
+   git clone https://github.com/bjorngluck/raspberry-pi-oled-monitor.git
    cd raspberry-pi-oled-monitor
    ```
    
