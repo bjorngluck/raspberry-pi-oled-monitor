@@ -111,7 +111,7 @@ The script performs the following functions:
    - Please acknowledge the original author when using or modifying the code.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE file](https://github.com/bjorngluck/raspberry-pi-oled-monitor/blob/main/LICENSE) for details.
 
 ## Acknowledgements
 - **Temu:** Bought a pack of 5 displays [SSD1306 OLED Display](https://share.temu.com/CKcEp5PY9LA).
