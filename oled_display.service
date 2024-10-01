@@ -1,0 +1,14 @@
+[Unit]
+Description=OLED Display Service
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/{Your_Username}/scripts/raspberry-pi-oled-monitor.py
+WorkingDirectory=/home/{Your_Username}/scripts/
+StandardOutput=file:/var/log/oleddisplay.log
+StandardError=file:/var/log/oleddisplay.log
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
