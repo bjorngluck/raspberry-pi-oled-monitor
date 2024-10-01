@@ -9,6 +9,7 @@ This project provides a dynamic system monitoring display for your Raspberry Pi 
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Run as a Service](#run-as-a-service)
 - [Code Explanation](#code-explanation)
 - [Future Enhancements](#future-enhancements)
 - [License](#license)
@@ -72,6 +73,40 @@ Note: Ensure you have the necessary permissions to access I2C and Docker without
 sudo usermod -aG i2c,docker $(whoami)
 ```
 Log out and log back in for the group changes to take effect.
+
+## Run as a Sevice
+1. Now create the service so that the script automaticall starts on reboot and no manual intervention is needed. Make sure you copy over the contents of the `oled_display.service` file that is part of this repo. Make sure to replace the `{Your_Username}` attribute with your username where the script is stored 
+   ```bash
+   sudo nano /etc/systemd/system/oled_display.service
+   ```
+2. Now we need to reload the daemon
+   ```bash
+   sudo systemctl daemon-reload
+   ```
+3. Let’s enable enable the service
+   ```bash
+   sudo systemctl enable oled_display.service
+   ```
+4. Starting the service.
+   ```bash
+   sudo systemctl start oled_display.service
+   ```
+
+**Other userful service commands**
+There are several commands you can do to start, stop, restart, and check status.
+
+1. To stop the service.
+   ```
+   sudo systemctl stop oled_display.service
+   ```
+2. To restart.
+   ```
+   sudo systemctl restart oled_display.service
+   ```
+3. To check status.
+   ```
+   sudo systemctl status oled_display.service
+   ```
 
 ## Code Explanation
 The script performs the following functions:
