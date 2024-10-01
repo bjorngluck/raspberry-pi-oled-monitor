@@ -30,7 +30,7 @@ image = Image.new("1", (width, height))
 draw = ImageDraw.Draw(image)
 
 # Define fonts of various sizes
-font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)  # Large font for scrolling text
+font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 14)  # Large font for scrolling text
 font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 9)    # Small font for labels
 font_tiny = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 8)     # Tiny font for detailed info
 
