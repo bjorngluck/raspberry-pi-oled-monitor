@@ -86,8 +86,8 @@ while True:
     graph_y = value_text_y + value_text_height + 1           # Adjusted to move graph down by 1 pixel
     graph_height = height - graph_y
 
-    # Switch to the next stat every 2 seconds
-    if current_time - last_switch_time > 2:
+    # Switch to the next stat every 3 seconds
+    if current_time - last_switch_time > 3:
         stat_index = (stat_index + 1) % len(stats)
         last_switch_time = current_time
 
@@ -120,7 +120,7 @@ while True:
         mem_percent = float(mem_percent_str)
         mem_data.append(mem_percent)           # Add current memory usage to deque
         graph_data = list(mem_data)
-        label = "Memory Usage"
+        label = "Memory"
         value = f"{mem_used:.0f}MB ({mem_percent:.1f}%)"
 
         # Draw the label and value
@@ -142,7 +142,7 @@ while True:
         disk_percent = float(disk_percent_str)
         disk_data.append(disk_percent)         # Add current disk usage to deque
         graph_data = list(disk_data)
-        label = "Disk Usage"
+        label = "Disk"
         value = f"{disk_used}GB ({disk_percent:.1f}%)"
 
         # Draw the label and value
