@@ -96,7 +96,7 @@ The script performs the following functions:
     - Shows the date of the last system update.
     - Indicates if a system reboot is pending.
 - **Screen Rotation:**
-  - Cycles through the different screens every 2 seconds.
+  - Cycles through the different screens every 3 seconds.
   - Uses a list (stats) to manage the rotation.
 - **Graphics and Layout:**
   - Utilizes the Pillow library to draw text and graphics on the OLED display.
