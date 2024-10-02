@@ -75,7 +75,7 @@ sudo usermod -aG i2c,docker $(whoami)
 Log out and log back in for the group changes to take effect.
 
 ## Run as a Service
-1. Now create the service so that the script automaticall starts on reboot and no manual intervention is needed. Make sure you copy over the contents of the `oled_display.service` file that is part of this repo. Make sure to replace the `{Your_Username}` attribute with your username where the script is stored 
+1. Now create the service so that the script automatically starts on reboot and no manual intervention is needed. Make sure you copy over the contents of the `oled_display.service` file that is part of this repo. Make sure to replace the `{Your_Username}` attribute with your username where the script is stored 
    ```bash
    sudo nano /etc/systemd/system/oled_display.service
    ```
@@ -93,7 +93,7 @@ Log out and log back in for the group changes to take effect.
    ```
 
 **Other userful service commands**
-There are several commands you can do to start, stop, restart, and check status.
+There are several commands to manage the service state.
 
 1. To stop the service.
    ```
